@@ -1,3 +1,7 @@
+@import "compass/css3/text-shadow"
+@import "compass/css3/border-radius"
+@import "compass/css3/box-shadow"
+
 // This import applies a global reset to any page that imports this stylesheet.
 @import blueprint/reset
 // To configure blueprint, edit the partials/base.sass file.
@@ -27,10 +31,67 @@ form.bp
   +blueprint-scaffolding
 
 body.one-col
+  background-color: $background
+
   #container
     +container
   #header, #content, footer
     +column($blueprint-grid-columns, true)
 
-h1
-  color: orange
+  #content
+    padding-top: 150px
+
+    h1
+      +single-text-shadow
+
+    h2
+      +text-shadow(rgba(black, .8) 0 0 2px, rgba(#aaa, .2) -1px -1px 0, rgba(white, .6) 1px 1px 2px)
+
+  footer
+    padding-top: 20px
+    +text-shadow(rgba(#aaa, .2) -1px -1px 0)
+
+  #teaser
+    +border-radius
+    +single-box-shadow
+    +column(10)
+    background-color: #555
+    padding: 8px
+
+    h1
+      font-size: 12px
+      +single-text-shadow(black, 0, 0, 0)
+    h2
+      font-size: 10px
+      +single-text-shadow(black, 0, 0, 0)
+
+    p
+      padding: 0px
+      margin: 0px
+      text-align: right
+
+    a
+      color: #999
+
+    #feed-control
+
+      .gfg-root
+        +border-radius(2px)
+        border-color: transparent
+
+        .gfg-title
+          background-color: #333
+          padding: 2px 0px 2px 5px
+          +border-radius(2px)
+
+        .gfg-entry
+          display: none
+
+        .gfg-listentry-highlight
+          background-image: none !important
+
+        .gfg-listentry-odd
+          background-color: #555
+        .gfg-listentry-even
+          background-color: #666
+          +border-radius(2px)
