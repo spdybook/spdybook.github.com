@@ -53,7 +53,7 @@ body.one-col
     padding-top: 75px
 
     h1
-      +single-text-shadow
+      +text-shadow($darker -1px -1px 2px, $lighter 1px 1px 1px)
 
     h2
       +text-shadow(rgba(black, .8) 0 0 2px, rgba($shadow, .2) -1px -1px 0, rgba(white, .6) 1px 1px 2px)
@@ -63,12 +63,15 @@ body.one-col
     +text-shadow(rgba($shadow, .2) -1px -1px 0)
 
   #teaser
-    +border-radius
-    +single-box-shadow
-    +column(10, true)
-    +append(14)
-    background-color: $light
-    padding: 8px
+    +column(24)
+
+    .panel
+      +border-radius
+      +single-box-shadow
+      +column(10, true)
+      padding: 8px
+
+      background-color: $light
 
     h1
       font-size: 12px
@@ -109,11 +112,9 @@ body.one-col
           background-color: $lighter
           +border-radius(2px)
 
-
   #mailing-list
-    +column(10, true)
-    +append(14)
-    margin: 40px 0px 10px
+    +column(24)
+    padding-top: 20px
 
     a
       +anchor-button
@@ -124,5 +125,4 @@ body.one-col
 
       &:hover
         color: $brighter
-
 
