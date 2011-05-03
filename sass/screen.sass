@@ -35,13 +35,22 @@ form.bp
 body.one-col
   background-color: $background
 
+  p
+    +single-text-shadow($lighter, 1px, 1px, 1px)
+    +column(8, true)
+    +append(16)
+    color: black
+
+  a
+    +single-text-shadow(transparent, 0, 0, 0)
+
   #container
     +container
   #header, #content, footer
     +column($blueprint-grid-columns, true)
 
   #content
-    padding-top: 150px
+    padding-top: 75px
 
     h1
       +single-text-shadow
@@ -69,6 +78,7 @@ body.one-col
       +single-text-shadow(black, 0, 0, 0)
 
     p
+      +column(10)
       padding: 0px
       margin: 0px
       text-align: right
