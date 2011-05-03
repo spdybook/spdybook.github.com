@@ -11,6 +11,8 @@
 // Import the non-default scaffolding module.
 @import blueprint/scaffolding
 
+@import "blueprint/buttons"
+
 // To generate css equivalent to the blueprint css but with your
 // configuration applied, uncomment:
 // @include blueprint
@@ -45,17 +47,18 @@ body.one-col
       +single-text-shadow
 
     h2
-      +text-shadow(rgba(black, .8) 0 0 2px, rgba(#aaa, .2) -1px -1px 0, rgba(white, .6) 1px 1px 2px)
+      +text-shadow(rgba(black, .8) 0 0 2px, rgba($shadow, .2) -1px -1px 0, rgba(white, .6) 1px 1px 2px)
 
   footer
     padding-top: 20px
-    +text-shadow(rgba(#aaa, .2) -1px -1px 0)
+    +text-shadow(rgba($shadow, .2) -1px -1px 0)
 
   #teaser
     +border-radius
     +single-box-shadow
-    +column(10)
-    background-color: #555
+    +column(10, true)
+    +append(14)
+    background-color: $light
     padding: 8px
 
     h1
@@ -80,7 +83,7 @@ body.one-col
         border-color: transparent
 
         .gfg-title
-          background-color: #333
+          background-color: $background
           padding: 2px 0px 2px 5px
           +border-radius(2px)
 
@@ -91,7 +94,25 @@ body.one-col
           background-image: none !important
 
         .gfg-listentry-odd
-          background-color: #555
+          background-color: $light
         .gfg-listentry-even
-          background-color: #666
+          background-color: $lighter
           +border-radius(2px)
+
+
+  #mailing-list
+    +column(10, true)
+    +append(14)
+    margin: 40px 0px 10px
+
+    a
+      +anchor-button
+      +border-radius
+      background-color: #444
+      border: 1px #222 solid
+      color: $bright
+
+      &:hover
+        color: $brighter
+
+
