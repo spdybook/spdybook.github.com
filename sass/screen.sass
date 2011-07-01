@@ -33,10 +33,11 @@ form.bp
   +blueprint-scaffolding
 
 body.one-col
-  background-color: $background
+  // background-color: $background
+  @include background-image(linear-gradient(left, $background-start, $background-start 40%, $background-end))
 
   p
-    +single-text-shadow($lighter, 1px, 1px, 1px)
+    +single-text-shadow($shadow, 1px, 1px, 2px)
     +column(8, true)
     +append(16)
     color: black
@@ -50,7 +51,7 @@ body.one-col
     +column($blueprint-grid-columns, true)
 
   #content
-    padding-top: 75px
+    padding-top: 15px
 
     h1
       +text-shadow($darker -1px -1px 2px, $lighter 1px 1px 1px)
@@ -61,6 +62,11 @@ body.one-col
   footer
     padding-top: 20px
     +text-shadow(rgba($shadow, .2) -1px -1px 0)
+
+  #cart
+    h1
+      +text-shadow(rgba(black, .8) 0 0 2px, rgba($shadow, .2) -1px -1px 0, rgba(white, .6) 1px 1px 2px)
+      font-size: 2.1em
 
   #teaser
     +column(24)
@@ -126,3 +132,9 @@ body.one-col
       &:hover
         color: $brighter
 
+.cost
+  +single-text-shadow($light, 1px, 0px, 2px)
+  background-color: $brighter
+
+.slammin
+  font-style: italic
