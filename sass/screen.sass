@@ -77,20 +77,21 @@ body.one-col
   #title
     #cover
       +column(10)
+      height: 550px
     p
-      +column(8, true)
-      +append(6)
+      +column(12, true)
+      +append(2)
 
   #cart
     h1
       +text-shadow(rgba(black, .8) 0 0 2px, rgba($shadow, .2) -1px -1px 0, rgba(white, .6) 1px 1px 2px)
       font-size: 2.1em
     p
-      +column(8, true)
-      +append(6)
+      +column(12, true)
+      +append(2)
 
   #teaser
-    +column(24)
+    +column(24, true)
 
     .panel
       +border-radius
@@ -139,8 +140,14 @@ body.one-col
           background-color: $lighter
           +border-radius(2px)
 
+  #marketing
+    +column(12, true)
+    +append(12)
+
+
+
   #mailing-list
-    +column(24)
+    +column(24, true)
     padding-top: 20px
 
     a
@@ -152,6 +159,9 @@ body.one-col
 
       &:hover
         color: $brighter
+
+  #follow
+    +column(24, true)
 
 .cost
   +single-text-shadow($light, 1px, 0px, 2px)
