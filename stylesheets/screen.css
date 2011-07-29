@@ -493,25 +493,29 @@ form.bp form.inline p {
 }
 
 /* line 35, ../sass/screen.sass */
-section#site-header {
+#site-header {
   margin: 0px;
   width: 100%;
   background-color: black;
 }
 /* line 39, ../sass/screen.sass */
-section#site-header h1, section#site-header h2 {
+#site-header span {
   color: white;
   font-size: 14px;
   display: inline;
 }
 /* line 43, ../sass/screen.sass */
-section#site-header h1 {
+#site-header .title {
   padding-left: 25px;
   padding-right: 8px;
   font-weight: bold;
 }
+/* line 47, ../sass/screen.sass */
+#site-header .subtitle2 {
+  float: right;
+}
 
-/* line 48, ../sass/screen.sass */
+/* line 50, ../sass/screen.sass */
 body.one-col {
   background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #cccccc), color-stop(40%, #cccccc), color-stop(100%, #ffffff));
   background-image: -webkit-linear-gradient(left, #cccccc, #cccccc 40%, #ffffff);
@@ -519,23 +523,23 @@ body.one-col {
   background-image: -o-linear-gradient(left, #cccccc, #cccccc 40%, #ffffff);
   background-image: linear-gradient(left, #cccccc, #cccccc 40%, #ffffff);
 }
-/* line 52, ../sass/screen.sass */
+/* line 54, ../sass/screen.sass */
 body.one-col p {
   text-shadow: white 1px 1px 2px;
   color: black;
 }
-/* line 56, ../sass/screen.sass */
+/* line 58, ../sass/screen.sass */
 body.one-col a {
   text-shadow: transparent 0 0 0;
 }
-/* line 59, ../sass/screen.sass */
+/* line 61, ../sass/screen.sass */
 body.one-col #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 61, ../sass/screen.sass */
+/* line 63, ../sass/screen.sass */
 body.one-col #header, body.one-col #content, body.one-col footer {
   display: inline;
   float: left;
@@ -546,24 +550,24 @@ body.one-col #header, body.one-col #content, body.one-col footer {
 * html body.one-col #header, * html body.one-col #content, * html body.one-col footer {
   overflow-x: hidden;
 }
-/* line 64, ../sass/screen.sass */
+/* line 66, ../sass/screen.sass */
 body.one-col #content {
   padding-top: 15px;
 }
-/* line 67, ../sass/screen.sass */
+/* line 69, ../sass/screen.sass */
 body.one-col #content h1 {
   text-shadow: #111111 -1px -1px 2px, #666666 1px 1px 1px;
 }
-/* line 70, ../sass/screen.sass */
+/* line 72, ../sass/screen.sass */
 body.one-col #content h2 {
   text-shadow: rgba(0, 0, 0, 0.8) 0 0 2px, rgba(255, 255, 255, 0.2) -1px -1px 0, rgba(255, 255, 255, 0.6) 1px 1px 2px;
 }
-/* line 73, ../sass/screen.sass */
+/* line 75, ../sass/screen.sass */
 body.one-col footer {
   padding-top: 20px;
   text-shadow: rgba(255, 255, 255, 0.2) -1px -1px 0;
 }
-/* line 78, ../sass/screen.sass */
+/* line 80, ../sass/screen.sass */
 body.one-col #title #cover {
   display: inline;
   float: left;
@@ -575,7 +579,7 @@ body.one-col #title #cover {
 * html body.one-col #title #cover {
   overflow-x: hidden;
 }
-/* line 81, ../sass/screen.sass */
+/* line 83, ../sass/screen.sass */
 body.one-col #title p {
   display: inline;
   float: left;
@@ -587,12 +591,12 @@ body.one-col #title p {
 * html body.one-col #title p {
   overflow-x: hidden;
 }
-/* line 86, ../sass/screen.sass */
+/* line 88, ../sass/screen.sass */
 body.one-col #cart h1 {
   text-shadow: rgba(0, 0, 0, 0.8) 0 0 2px, rgba(255, 255, 255, 0.2) -1px -1px 0, rgba(255, 255, 255, 0.6) 1px 1px 2px;
   font-size: 2.1em;
 }
-/* line 89, ../sass/screen.sass */
+/* line 91, ../sass/screen.sass */
 body.one-col #cart p {
   display: inline;
   float: left;
@@ -604,7 +608,7 @@ body.one-col #cart p {
 * html body.one-col #cart p {
   overflow-x: hidden;
 }
-/* line 93, ../sass/screen.sass */
+/* line 95, ../sass/screen.sass */
 body.one-col #teaser {
   display: inline;
   float: left;
@@ -615,7 +619,7 @@ body.one-col #teaser {
 * html body.one-col #teaser {
   overflow-x: hidden;
 }
-/* line 96, ../sass/screen.sass */
+/* line 98, ../sass/screen.sass */
 body.one-col #teaser .panel {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -638,17 +642,17 @@ body.one-col #teaser .panel {
 * html body.one-col #teaser .panel {
   overflow-x: hidden;
 }
-/* line 104, ../sass/screen.sass */
+/* line 106, ../sass/screen.sass */
 body.one-col #teaser h1 {
   font-size: 12px;
   text-shadow: black 0 0 0;
 }
-/* line 107, ../sass/screen.sass */
+/* line 109, ../sass/screen.sass */
 body.one-col #teaser h2 {
   font-size: 10px;
   text-shadow: black 0 0 0;
 }
-/* line 111, ../sass/screen.sass */
+/* line 113, ../sass/screen.sass */
 body.one-col #teaser p {
   display: inline;
   float: left;
@@ -662,11 +666,11 @@ body.one-col #teaser p {
 * html body.one-col #teaser p {
   overflow-x: hidden;
 }
-/* line 117, ../sass/screen.sass */
+/* line 119, ../sass/screen.sass */
 body.one-col #teaser a {
   color: #999999;
 }
-/* line 122, ../sass/screen.sass */
+/* line 124, ../sass/screen.sass */
 body.one-col #teaser #feed-control .gfg-root {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -676,7 +680,7 @@ body.one-col #teaser #feed-control .gfg-root {
   border-radius: 2px;
   border-color: transparent;
 }
-/* line 126, ../sass/screen.sass */
+/* line 128, ../sass/screen.sass */
 body.one-col #teaser #feed-control .gfg-root .gfg-title {
   background-color: #333333;
   padding: 2px 0px 2px 5px;
@@ -687,19 +691,19 @@ body.one-col #teaser #feed-control .gfg-root .gfg-title {
   -khtml-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 131, ../sass/screen.sass */
+/* line 133, ../sass/screen.sass */
 body.one-col #teaser #feed-control .gfg-root .gfg-entry {
   display: none;
 }
-/* line 134, ../sass/screen.sass */
+/* line 136, ../sass/screen.sass */
 body.one-col #teaser #feed-control .gfg-root .gfg-listentry-highlight {
   background-image: none !important;
 }
-/* line 137, ../sass/screen.sass */
+/* line 139, ../sass/screen.sass */
 body.one-col #teaser #feed-control .gfg-root .gfg-listentry-odd {
   background-color: #555555;
 }
-/* line 139, ../sass/screen.sass */
+/* line 141, ../sass/screen.sass */
 body.one-col #teaser #feed-control .gfg-root .gfg-listentry-even {
   background-color: #666666;
   -moz-border-radius: 2px;
@@ -709,7 +713,7 @@ body.one-col #teaser #feed-control .gfg-root .gfg-listentry-even {
   -khtml-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 143, ../sass/screen.sass */
+/* line 145, ../sass/screen.sass */
 body.one-col #marketing {
   display: inline;
   float: left;
@@ -721,7 +725,7 @@ body.one-col #marketing {
 * html body.one-col #marketing {
   overflow-x: hidden;
 }
-/* line 149, ../sass/screen.sass */
+/* line 151, ../sass/screen.sass */
 body.one-col #mailing-list {
   display: inline;
   float: left;
@@ -733,7 +737,7 @@ body.one-col #mailing-list {
 * html body.one-col #mailing-list {
   overflow-x: hidden;
 }
-/* line 153, ../sass/screen.sass */
+/* line 155, ../sass/screen.sass */
 body.one-col #mailing-list a {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -773,11 +777,11 @@ body.one-col #mailing-list a img {
   height: 16px;
   float: none;
 }
-/* line 160, ../sass/screen.sass */
+/* line 162, ../sass/screen.sass */
 body.one-col #mailing-list a:hover {
   color: #aaaaaa;
 }
-/* line 163, ../sass/screen.sass */
+/* line 165, ../sass/screen.sass */
 body.one-col #follow {
   display: inline;
   float: left;
@@ -789,13 +793,13 @@ body.one-col #follow {
   overflow-x: hidden;
 }
 
-/* line 166, ../sass/screen.sass */
+/* line 168, ../sass/screen.sass */
 .cost {
   text-shadow: #555555 1px 0px 2px;
   background-color: #aaaaaa;
 }
 
-/* line 170, ../sass/screen.sass */
+/* line 172, ../sass/screen.sass */
 .slammin {
   font-style: italic;
 }
