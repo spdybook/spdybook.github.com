@@ -49,7 +49,7 @@ form.bp
 
 body.one-col
   // background-color: $background
-  @include background-image(linear-gradient(left, $background-start, $background-start 40%, $background-end))
+  @include background-image(linear-gradient(left, $background-start, $background-start 90%, $background-end))
 
   p
     +single-text-shadow($shadow, 1px, 1px, 2px)
@@ -60,21 +60,26 @@ body.one-col
 
   #container
     +container
+    // +box-shadow(orange 25px 10px 25px, orange -25px 10px 25px)
   #header, #content, footer
     +column($blueprint-grid-columns, true)
 
   #content
-    padding-top: 15px
+    padding: 15px 10px
 
     h1
       +text-shadow($darker -1px -1px 2px, $lighter 1px 1px 1px)
 
     h2
-      +text-shadow(rgba(black, .8) 0 0 2px, rgba($shadow, .2) -1px -1px 0, rgba(white, .6) 1px 1px 2px)
+      +text-shadow(rgba(black, .8) 0px 0px 2px, rgba(white, .2) -1px -1px 0px, rgba(white, .6) 1px 1px 2px)
+
+    background-color: white
+    // border-left: 3px #CA3921 solid
+    // border-right: 3px #CA3921 solid
 
   footer
     padding-top: 20px
-    +text-shadow(rgba($shadow, .2) -1px -1px 0)
+    +text-shadow(rgba(white, .2) -1px -1px 0)
 
   #title
     #cover
@@ -86,7 +91,7 @@ body.one-col
 
   #cart
     h1
-      +text-shadow(rgba(black, .8) 0 0 2px, rgba($shadow, .2) -1px -1px 0, rgba(white, .6) 1px 1px 2px)
+      +text-shadow(rgba(black, .8) 0 0 2px, rgba(white, .2) -1px -1px 0, rgba(white, .6) 1px 1px 2px)
       font-size: 2.1em
     p
       +column(12, true)
