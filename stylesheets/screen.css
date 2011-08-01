@@ -715,7 +715,7 @@ body.one-col #teaser #feed-control .gfg-root .gfg-listentry-even {
   border-radius: 2px;
 }
 /* line 150, ../sass/screen.sass */
-body.one-col #marketing {
+body.one-col #marketing, body.one-col #more {
   display: inline;
   float: left;
   margin-right: 0;
@@ -723,10 +723,10 @@ body.one-col #marketing {
   padding-right: 480px;
 }
 /* line 147, ../../../.rvm/gems/ruby-1.9.2-p180@spdybook-site/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.one-col #marketing {
+* html body.one-col #marketing, * html body.one-col #more {
   overflow-x: hidden;
 }
-/* line 156, ../sass/screen.sass */
+/* line 154, ../sass/screen.sass */
 body.one-col #mailing-list {
   display: inline;
   float: left;
@@ -738,7 +738,7 @@ body.one-col #mailing-list {
 * html body.one-col #mailing-list {
   overflow-x: hidden;
 }
-/* line 160, ../sass/screen.sass */
+/* line 158, ../sass/screen.sass */
 body.one-col #mailing-list a {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -778,11 +778,11 @@ body.one-col #mailing-list a img {
   height: 16px;
   float: none;
 }
-/* line 167, ../sass/screen.sass */
+/* line 165, ../sass/screen.sass */
 body.one-col #mailing-list a:hover {
   color: #aaaaaa;
 }
-/* line 170, ../sass/screen.sass */
+/* line 168, ../sass/screen.sass */
 body.one-col #follow {
   display: inline;
   float: left;
@@ -794,13 +794,13 @@ body.one-col #follow {
   overflow-x: hidden;
 }
 
-/* line 173, ../sass/screen.sass */
+/* line 171, ../sass/screen.sass */
 .cost {
   text-shadow: #555555 1px 0px 2px;
   background-color: #aaaaaa;
 }
 
-/* line 177, ../sass/screen.sass */
+/* line 175, ../sass/screen.sass */
 .slammin {
   font-style: italic;
 }
