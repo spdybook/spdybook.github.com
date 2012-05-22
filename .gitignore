@@ -1,3 +1,5 @@
 .bundle
 .sass-cache
 _site
+keys
+node_modules
