@@ -63,6 +63,7 @@ app.get('/real', function(req, res){
 
 app.get('/push', function(req, res){
   function push(relative_path) {
+    if (!res.push) return;
     res.push(relative_path, {}, function(err, stream) {
         fs.createReadStream('public/' + relative_path).pipe(stream);
     });
